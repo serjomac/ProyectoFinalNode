@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Rompecabezas</title>
+</head>
+<body>
+    
+
+    <div class="text-center">
+            <img src="images/letrero.png" class="rounded letrero" alt="...">
+          </div>
+
+    <table class="caca">
+          <!--
+           <tr id="caca2">
+            <td><a href=""><img class="rounded-circle" src="images/daniel.png" alt="champ"></a></td>
+            <td><img class="rounded-circle" src="images/josty.png" alt="gossy"></td>
+            <td><img class="rounded-circle" src="images/joss.png" alt="romp"></td>
+            <td><img class="rounded-circle" src="images/malats.png" alt="massap"></td>
+        </tr>
+        
+        -->
+        
+        {{#each ObjUsers}}
+              
+              <td><a href="index" id="avatar"><img class="rounded-circle" src="{{urlImagen}}" ></a></td>
+            
+
+          {{/each}}
+        
+        
+        
+    </table>
+    <div class="row d-flex justify-content-center pie">
+            <a href="">Ir a Administración</a>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+listado de usuarios
+
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Usuario</th> 
+    <th>Clave</th>
+    <th>Puntaje</th>
+    <th>Eliminar</th>
+    <th>Actualizar</th>
+    
+  </tr>
+  
+  {{#each ObjUsers}}
+  <tr>
+    <td>{{nombre}}</td>
+    <td>{{usuario}}</td>
+    <td>{{clave}}</td>
+    <td>{{puntaje}}</td>
+    <form action="/usuarios/{{id}}?method=DELETE" method="post">
+    <td><button type="submit">borrar</button></td>
+    </form>
+    
+    <td><a href="">Actualizar</a></td>
+    
+    
+  </tr>
+
+{{/each}}
+  
+</table>
+
+<a href="add"><button>Crear nuevo Usuario</button></a>
+
+
+
+
+
+

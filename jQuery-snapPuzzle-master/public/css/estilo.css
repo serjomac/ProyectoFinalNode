@@ -1,0 +1,40 @@
+.pie {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+ }
+
+body{
+    background-image: url("../img/clouds.png");
+    background-color: #4EB9F3;
+}
+
+#userss{
+    position: fixed;
+    top: 30%;
+    width: 75vw;
+    margin: auto;
+    bottom: 30px;
+}
+h1{
+    margin-top: 5vw;
+    color: burlywood;
+}
+
+.rounded-circle{
+    margin-top: 5vh;
+    width: 15vw;
+}
+
+.letrero{
+    width: 40vw; 
+}
+
+.caca{
+    margin: auto;
+}
+
