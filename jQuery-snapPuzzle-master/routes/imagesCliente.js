@@ -6,17 +6,20 @@ var router = express.Router();
 
 
 
-router.get('/index', function(req, res){
+router.get('/seleccionRompecabeza', function(req, res){
              
              knex('images')
                 .select()
                 .then(images => {
                  
-                 res.render('index',{ObjImages: images});
+                 res.render('seleccionRompecabeza',{ObjImages: images});
                  
              });
              
 });
+
+
+
 
 
 router.get('/', function(req, res){

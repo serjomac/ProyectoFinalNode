@@ -14,11 +14,10 @@ router.get('/add', (req, res) => res.render('user/add'));
 router.get('/login', (req, res) => res.render('login'));
 
 router.get('/', function(req, res){
-            
-            
+            var x = req.body.img;
             console.log(localStorage.getItem('imagen'))
              knex('images')
-                .where("url", localStorage.getItem("imagen"))
+                .where("url",x)
                 .then( images => {
                  res.render('demo', {ObjImages: images});
              });
